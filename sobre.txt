@@ -1,0 +1,21 @@
+<div class="text-center">
+        <img
+          class="mb-4"
+          src="../assets/images/logo/Logo-PGO-significado.png"
+          alt=""
+          width="400"
+          height="350"
+        />
+        <h4>💾 Cadastre. 🛒 Venda. 📈 Gerencie.</h4>
+        <p>
+          A <strong>PGO</strong> é uma plataforma de gerenciamento de estoque,
+          vendas e clientes. De modo geral suas funções principais consistem em:
+          cadastrar produtos que futuramente farão parte de uma venda a um
+          cliente e armazenar tais dados para gerenciamento e análise nas
+          tomadas de decisões. <br />
+          Interfaces responsivas e objetivas. Utilize-a até pelo seu smartphone.
+        </p>
+        <a href="paginas/login.html">
+          <i class="bi bi-box-arrow-in-left"></i> Encerrar
+        </a>
+      </div>

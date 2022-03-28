@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS 4.6 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo/favicon-PGO.png"
+      type="image/x-icon"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style-main.css" />
+
+    <title>PGO | Clientes</title>
+  </head>
+  <body>
+    <!-- Nav Bar responsivo -->
+    <nav
+      class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow"
+    >
+      <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="../index.html"
+        ><img
+          src="../assets/images/logo/favicon-PGO.png"
+          alt=""
+          width="35"
+          height="35"
+        />
+        PGO
+      </a>
+      <button
+        class="navbar-toggler position-absolute d-md-none collapsed"
+        type="button"
+        data-toggle="collapse"
+        data-target="#sidebarMenu"
+        aria-controls="sidebarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <input
+        id="inputSearch"
+        class="form-control form-control-dark mr-auto p-2 p-3"
+        type="text"
+        placeholder="Pesquisar...."
+        aria-label="Search"
+      />
+      <ul class="navbar-nav px-3">
+        <li class="nav-item">
+          <a id="btn-nav" class="nav-link" href="#"
+            ><i class="bi bi-list-check"></i
+          ></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item">
+          <a id="btn-nav" class="nav-link" href="#"
+            ><i class="bi bi-basket2"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+        >
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">
+                  <i class="bi bi-speedometer2"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-boxes"></i> Estoque
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="bi bi-list-stars"></i> Clientes
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-calculator"></i> Caixa
+                </a>
+              </li>
+              <h6
+                class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted"
+              >
+                ÁREA DO USUÁRIO
+              </h6>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-sliders2"></i> Configurações
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">
+                  <i class="bi bi-box-arrow-in-left"></i> Sair
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- CORPO DA DASHBOARD -->
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Clientes</h1>
+            <div class="btn-toolbar mb-2 mb-md-0">
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group">
+                  <button
+                    type="button"
+                    class="btn btn-secondary btn-m dropdown-toggle"
+                    data-toggle="dropdown"
+                    data-display="static"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-calendar-week" style="font-size: 18px"></i>
+                    Período das Estatísticas
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-menu-left dropdown-menu-lg-left"
+                  >
+                    <button class="dropdown-item" type="button">
+                      <input type="date" name="" id="" />
+                    </button>
+                    <button class="dropdown-item" type="button">Hoje</button>
+                    <button class="dropdown-item" type="button">
+                      Esta semana
+                    </button>
+                    <button class="dropdown-item" type="button">
+                      Determinar Período
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TABELA CLIENTES -->
+          <div class="table-responsive">
+            <table class="table">
+              <table class="table table-bordered">
+                <thead>
+                  <tr class="thead-primary">
+                    <th scope="col" style="width: 5%">#</th>
+                    <th scope="col" style="width: 5%">Código</th>
+                    <th scope="col" span="50%" style="width: 30%">Cliente</th>
+                    <th scope="col" style="width: 20%">Contato</th>
+                    <th scope="col" style="width: 40%">Endereço</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>0001</td>
+                    <td>João da Silva Júnior</td>
+                    <td>(92) 98122-3655</td>
+                    <td>Rua Projetada V, 12, Santos Dumont - Manaus (AM)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>0002</td>
+                    <td>José Alencar</td>
+                    <td>(92) 99322-2230</td>
+                    <td>Rua Alameda Ferreira, 100 - São Pedro - Manaus (AM)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>0003</td>
+                    <td>Lúcia Costa</td>
+                    <td>(11) 98120-4321</td>
+                    <td>Av. Higienópolis, 1001, Consolação - São Paulo (SP)</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>0004</td>
+                    <td>Calebe Pereira Martins</td>
+                    <td>(21) 99499-9128</td>
+                    <td>Rua Anchieta, 2022, Leme - Rio de Janeiro (RJ)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
